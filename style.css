@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://wallpaper.dog/large/443.png);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    backdrop-filter: blur(10px);
+    min-width: 1%;
+    min-height: 1%;
+    border: 2px solid white;
+    padding: 60px;
+    border-radius: 5px;
+    
+}
+
+.container-contador{
+    min-width: 1%;
+    min-height: 1%;
+    
+    font-size: 90px;
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 0px #FFF, 
+        -1px 1px 0px #FFF,                    
+        1px -1px 0px #FFF,                  
+        1px 0px 0px #FFF;
+
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-menu{
+    min-width: 1%;
+    min-height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    min-width: 1%;
+    min-height: 1%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    font-size: clamp(1em, 1em + 3vw, 2.5em);
+
+}
+
+button:hover{
+    background-color: white;
+    color: #303030;
+}
+
+button:active{
+    background-color: #303030;
+    color: white;
+}
+
+@keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+
+
+
+.parado{
+    animation: animate 1s linear infinite;
+}
+
+.container-historico{
+    background-color: transparent;
+    
+    padding: 10px;
+    font-size: 30px;
+    border: 2px solid white;
+    margin-top: 30px;
+    border-radius: 5px 5px 5px 0px;
+    
+}
+
+.div, p{
+    margin-top: 10px;
+   margin-bottom: 10px;
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.botao-limpar{
+    border-radius: 1px 1px 5px 5px;
+    
+    display: flex;
+    font-size: 20px;
+    width: 70px;
+    border-top: none;
+}
+
+.contem{
+    box-shadow: 0px 60px 20px 20px rgba(0, 0, 0, 0.253);
+}
+
+.span-historico{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 290px;
+    color: white;
+    font-size: 22px;
+    left: 200px;
+    background-color: #7c5c86;
+
+    border-radius: 4px 4px 4px 4px;
+    
+
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    
+    padding: 0px 1% 0px 1%;
+}
